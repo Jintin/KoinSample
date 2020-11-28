@@ -24,6 +24,6 @@ val myModule = module {
     factory(named("Lyme")) { HoneyLemonade(get(), get(named("Lyme"))) }
     factory { Honey(get()) }
     factory { Lemon() }
-    factory<Lemon>(named("Lyme")) { Lyme() }
+//    factory<Lemon>(named("Lyme")) { Lyme() }
     single { Bee() }
 }
