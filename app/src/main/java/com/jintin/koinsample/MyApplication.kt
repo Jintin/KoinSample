@@ -2,6 +2,7 @@ package com.jintin.koinsample
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
+import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
@@ -26,4 +27,5 @@ val myModule = module {
     factory { Lemon() }
     factory<Lemon>(named("Lyme")) { Lyme() }
     single { Bee() }
+    viewModel { MainViewModel(get()) }
 }
