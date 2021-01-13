@@ -16,7 +16,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        viewModel.check()
+
+        viewModel.doSomething()
+
         val honeyLemonade2 = get<HoneyLemonade>()
         val honeyLemonade3: HoneyLemonade = get(named("Lyme"))
     }

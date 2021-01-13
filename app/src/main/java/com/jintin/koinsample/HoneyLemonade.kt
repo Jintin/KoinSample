@@ -1,6 +1,6 @@
 package com.jintin.koinsample
 
-class HoneyLemonade(val honey: Honey, val lemon: Lemon)
+open class HoneyLemonade(val honey: Honey, val lemon: Lemon)
 
 class Honey(val bee: Bee)
 
